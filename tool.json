@@ -1,0 +1,342 @@
+{
+  "tool": {
+    "id": "criterios-de-ranson",
+    "title": "Critérios de Ranson",
+    "short": "Prognóstico da pancreatite aguda na admissão e em 48 h",
+    "desc": "Calcule os critérios de Ranson na pancreatite aguda: 5 critérios na admissão e 6 em 48 horas, com a mortalidade descrita na série original.",
+    "lead": "Soma 5 critérios avaliados na admissão e 6 nas primeiras 48 horas para estimar a gravidade e a mortalidade da pancreatite aguda. Há cortes próprios para a pancreatite biliar.",
+    "spec": [
+      "cirurgia-do-aparelho-digestivo",
+      "gastroenterologia",
+      "cirurgia-geral",
+      "medicina-intensiva"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "idade",
+        "Admissão: idade &gt; 55 anos (biliar: &gt; 70)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "leuco",
+        "Admissão: leucócitos &gt; 16.000/mm³ (biliar: &gt; 18.000)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "glic",
+        "Admissão: glicemia &gt; 200 mg/dL (biliar: &gt; 220)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ldh",
+        "Admissão: LDH &gt; 350 U/L (biliar: &gt; 400)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ast",
+        "Admissão: AST &gt; 250 U/L",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ht",
+        "48 h: queda do hematócrito &gt; 10 pontos percentuais",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "bun",
+        "48 h: aumento do BUN &gt; 5 mg/dL, ureia &gt; 10,7 mg/dL (biliar: BUN &gt; 2, ureia &gt; 4,3)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "ca",
+        "48 h: cálcio &lt; 8 mg/dL",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "pao2",
+        "48 h: PaO₂ &lt; 60 mmHg (não se aplica à biliar)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "be",
+        "48 h: déficit de bases &gt; 4 mEq/L (biliar: &gt; 5)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "seq",
+        "48 h: sequestro de líquidos &gt; 6 L (biliar: &gt; 4 L)",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Critérios de Ranson",
+      "unit": "",
+      "bands": [
+        [
+          0,
+          "low",
+          "Ranson 0 a 2: pancreatite leve provável",
+          "Mortalidade em torno de 1% na série original."
+        ],
+        [
+          3,
+          "mid",
+          "Ranson 3 a 4: pancreatite grave",
+          "Mortalidade em torno de 15%; monitorização intensiva."
+        ],
+        [
+          5,
+          "high",
+          "Ranson 5 a 6: pancreatite grave",
+          "Mortalidade em torno de 40%; considerar UTI."
+        ],
+        [
+          7,
+          "high",
+          "Ranson ≥ 7: pancreatite muito grave",
+          "Mortalidade próxima de 100% na série original; UTI."
+        ]
+      ]
+    },
+    "formula": "<p>Um ponto por critério: 5 na admissão e 6 ao longo das primeiras 48 horas. Total de 0 a 11 (0 a 10 na pancreatite biliar, que não usa a PaO₂).</p><p>Os valores entre parênteses são os cortes para pancreatite biliar (Ranson 1982).</p>",
+    "table": [
+      [
+        "Critérios",
+        "Mortalidade na série original"
+      ],
+      [
+        "0 a 2",
+        "~1%"
+      ],
+      [
+        "3 a 4",
+        "~15%"
+      ],
+      [
+        "5 a 6",
+        "~40%"
+      ],
+      [
+        "≥ 7",
+        "~100%"
+      ]
+    ],
+    "table_note": "Mortalidades da década de 1970; com o suporte intensivo atual, os números absolutos são menores, mas a relação com a gravidade se mantém.",
+    "tips": [
+      "O escore só fica completo com 48 horas: para decisões precoces, use o BISAP e a presença de SIRS.",
+      "Ranson ≥ 3 é o corte clássico de pancreatite grave; hoje a gravidade é definida pela falência orgânica (Atlanta revisada).",
+      "Na pancreatite biliar, marque o critério quando o valor ultrapassar o corte entre parênteses.",
+      "O sequestro de líquidos é a diferença entre o volume infundido e as perdas (diurese e outras) nas primeiras 48 horas.",
+      "O escore não foi validado para reavaliações após 48 horas nem para pancreatite pós-CPRE."
+    ],
+    "sources": [
+      [
+        "Ranson JH et al. Prognostic signs and the role of operative management in acute pancreatitis. Surg Gynecol Obstet, 1974. (PubMed)",
+        "https://pubmed.ncbi.nlm.nih.gov/4834279/"
+      ],
+      [
+        "Ranson JH. Etiological and prognostic factors in human acute pancreatitis: a review. Am J Gastroenterol, 1982. (PubMed)",
+        "https://pubmed.ncbi.nlm.nih.gov/7051819/"
+      ],
+      [
+        "Tenner S et al. American College of Gastroenterology guideline: management of acute pancreatitis. Am J Gastroenterol, 2013.",
+        "https://doi.org/10.1038/ajg.2013.218"
+      ]
+    ],
+    "cases": [
+      [
+        "Idade e leucócitos: 2 critérios (leve)",
+        {
+          "idade": true,
+          "leuco": true
+        },
+        {
+          "score": 2,
+          "level": "low"
+        }
+      ],
+      [
+        "Idade, LDH, cálcio e sequestro: 4 critérios",
+        {
+          "idade": true,
+          "ldh": true,
+          "ca": true,
+          "seq": true
+        },
+        {
+          "score": 4,
+          "level": "mid"
+        }
+      ],
+      [
+        "7 critérios: muito grave",
+        {
+          "idade": true,
+          "leuco": true,
+          "glic": true,
+          "ldh": true,
+          "ht": true,
+          "ca": true,
+          "pao2": true
+        },
+        {
+          "score": 7,
+          "level": "high",
+          "verdict": "muito grave"
+        }
+      ]
+    ],
+    "batch": "renal-digestivo",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "Critérios de Ranson",
+      "fields": [
+        [
+          "idade",
+          "chk",
+          1
+        ],
+        [
+          "leuco",
+          "chk",
+          1
+        ],
+        [
+          "glic",
+          "chk",
+          1
+        ],
+        [
+          "ldh",
+          "chk",
+          1
+        ],
+        [
+          "ast",
+          "chk",
+          1
+        ],
+        [
+          "ht",
+          "chk",
+          1
+        ],
+        [
+          "bun",
+          "chk",
+          1
+        ],
+        [
+          "ca",
+          "chk",
+          1
+        ],
+        [
+          "pao2",
+          "chk",
+          1
+        ],
+        [
+          "be",
+          "chk",
+          1
+        ],
+        [
+          "seq",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Ranson 0 a 2: pancreatite leve provável",
+          "Mortalidade em torno de 1% na série original."
+        ],
+        [
+          3,
+          "mid",
+          "Ranson 3 a 4: pancreatite grave",
+          "Mortalidade em torno de 15%; monitorização intensiva."
+        ],
+        [
+          5,
+          "high",
+          "Ranson 5 a 6: pancreatite grave",
+          "Mortalidade em torno de 40%; considerar UTI."
+        ],
+        [
+          7,
+          "high",
+          "Ranson ≥ 7: pancreatite muito grave",
+          "Mortalidade próxima de 100% na série original; UTI."
+        ]
+      ]
+    },
+    "areaId": "renal-digestivo",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/renal-digestivo.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/renal-digestivo.php",
+    "sha256": "95087d729438637d36e1a49af04d8de0fe1d9f7876443084443906a9281ef107",
+    "bytes": 109421
+  },
+  "clinicalValidation": "not-performed"
+}

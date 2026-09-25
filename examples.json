@@ -1,0 +1,65 @@
+[
+  {
+    "label": "Idade e leucócitos: 2 critérios (leve)",
+    "input": {
+      "idade": true,
+      "leuco": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "low"
+    },
+    "originalInput": {
+      "idade": true,
+      "leuco": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Idade, LDH, cálcio e sequestro: 4 critérios",
+    "input": {
+      "idade": true,
+      "ldh": true,
+      "ca": true,
+      "seq": true
+    },
+    "expected": {
+      "score": 4,
+      "level": "mid"
+    },
+    "originalInput": {
+      "idade": true,
+      "ldh": true,
+      "ca": true,
+      "seq": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "7 critérios: muito grave",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": true,
+      "ldh": true,
+      "ht": true,
+      "ca": true,
+      "pao2": true
+    },
+    "expected": {
+      "score": 7,
+      "level": "high",
+      "verdict": "muito grave"
+    },
+    "originalInput": {
+      "idade": true,
+      "leuco": true,
+      "glic": true,
+      "ldh": true,
+      "ht": true,
+      "ca": true,
+      "pao2": true
+    },
+    "expandedZeroOptions": []
+  }
+]
