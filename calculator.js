@@ -1,11 +1,11 @@
-/* tool-criterios-de-ranson · Elucenia · https://github.com/Elucenia/tool-criterios-de-ranson
-   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+/* tool-criterios-de-ranson · ELUCENIA · https://github.com/Elucenia/tool-criterios-de-ranson
+   Copyright (c) 2026 ELUCENIA · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
    Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"criterios-de-ranson","title":"Critérios de Ranson","fields":[["idade","Admissão: idade &gt; 55 anos (biliar: &gt; 70)","chk",{"pts":1}],["leuco","Admissão: leucócitos &gt; 16.000/mm³ (biliar: &gt; 18.000)","chk",{"pts":1}],["glic","Admissão: glicemia &gt; 200 mg/dL (biliar: &gt; 220)","chk",{"pts":1}],["ldh","Admissão: LDH &gt; 350 U/L (biliar: &gt; 400)","chk",{"pts":1}],["ast","Admissão: AST &gt; 250 U/L","chk",{"pts":1}],["ht","48 h: queda do hematócrito &gt; 10 pontos percentuais","chk",{"pts":1}],["bun","48 h: aumento do BUN &gt; 5 mg/dL, ureia &gt; 10,7 mg/dL (biliar: BUN &gt; 2, ureia &gt; 4,3)","chk",{"pts":1}],["ca","48 h: cálcio &lt; 8 mg/dL","chk",{"pts":1}],["pao2","48 h: PaO₂ &lt; 60 mmHg (não se aplica à biliar)","chk",{"pts":1}],["be","48 h: déficit de bases &gt; 4 mEq/L (biliar: &gt; 5)","chk",{"pts":1}],["seq","48 h: sequestro de líquidos &gt; 6 L (biliar: &gt; 4 L)","chk",{"pts":1}]],"config":{"unit":"","label":"Critérios de Ranson","fields":[["idade","chk",1],["leuco","chk",1],["glic","chk",1],["ldh","chk",1],["ast","chk",1],["ht","chk",1],["bun","chk",1],["ca","chk",1],["pao2","chk",1],["be","chk",1],["seq","chk",1]],"bands":[[0,"low","Ranson 0 a 2: pancreatite leve provável","Mortalidade em torno de 1% na série original."],[3,"mid","Ranson 3 a 4: pancreatite grave","Mortalidade em torno de 15%; monitorização intensiva."],[5,"high","Ranson 5 a 6: pancreatite grave","Mortalidade em torno de 40%; considerar UTI."],[7,"high","Ranson ≥ 7: pancreatite muito grave","Mortalidade próxima de 100% na série original; UTI."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
