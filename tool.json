@@ -5,164 +5,82 @@
     "short": "Prognóstico da pancreatite aguda na admissão e em 48 h",
     "desc": "Calcule os critérios de Ranson na pancreatite aguda: 5 critérios na admissão e 6 em 48 horas, com a mortalidade descrita na série original.",
     "lead": "Soma 5 critérios avaliados na admissão e 6 nas primeiras 48 horas para estimar a gravidade e a mortalidade da pancreatite aguda. Há cortes próprios para a pancreatite biliar.",
+    "kind": "Escore",
     "spec": [
       "cirurgia-do-aparelho-digestivo",
       "gastroenterologia",
       "cirurgia-geral",
       "medicina-intensiva"
     ],
-    "tier": 1,
     "fields": [
       [
         "idade",
         "Admissão: idade &gt; 55 anos (biliar: &gt; 70)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "leuco",
         "Admissão: leucócitos &gt; 16.000/mm³ (biliar: &gt; 18.000)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "glic",
         "Admissão: glicemia &gt; 200 mg/dL (biliar: &gt; 220)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ldh",
         "Admissão: LDH &gt; 350 U/L (biliar: &gt; 400)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ast",
         "Admissão: AST &gt; 250 U/L",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ht",
         "48 h: queda do hematócrito &gt; 10 pontos percentuais",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "bun",
         "48 h: aumento do BUN &gt; 5 mg/dL, ureia &gt; 10,7 mg/dL (biliar: BUN &gt; 2, ureia &gt; 4,3)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "ca",
         "48 h: cálcio &lt; 8 mg/dL",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "pao2",
         "48 h: PaO₂ &lt; 60 mmHg (não se aplica à biliar)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "be",
         "48 h: déficit de bases &gt; 4 mEq/L (biliar: &gt; 5)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "seq",
         "48 h: sequestro de líquidos &gt; 6 L (biliar: &gt; 4 L)",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Critérios de Ranson",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "low",
-          "Ranson 0 a 2: pancreatite leve provável",
-          "Mortalidade em torno de 1% na série original."
-        ],
-        [
-          3,
-          "mid",
-          "Ranson 3 a 4: pancreatite grave",
-          "Mortalidade em torno de 15%; monitorização intensiva."
-        ],
-        [
-          5,
-          "high",
-          "Ranson 5 a 6: pancreatite grave",
-          "Mortalidade em torno de 40%; considerar UTI."
-        ],
-        [
-          7,
-          "high",
-          "Ranson ≥ 7: pancreatite muito grave",
-          "Mortalidade próxima de 100% na série original; UTI."
-        ]
-      ]
-    },
     "formula": "<p>Um ponto por critério: 5 na admissão e 6 ao longo das primeiras 48 horas. Total de 0 a 11 (0 a 10 na pancreatite biliar, que não usa a PaO₂).</p><p>Os valores entre parênteses são os cortes para pancreatite biliar (Ranson 1982).</p>",
-    "table": [
-      [
-        "Critérios",
-        "Mortalidade na série original"
-      ],
-      [
-        "0 a 2",
-        "~1%"
-      ],
-      [
-        "3 a 4",
-        "~15%"
-      ],
-      [
-        "5 a 6",
-        "~40%"
-      ],
-      [
-        "≥ 7",
-        "~100%"
-      ]
-    ],
-    "table_note": "Mortalidades da década de 1970; com o suporte intensivo atual, os números absolutos são menores, mas a relação com a gravidade se mantém.",
-    "tips": [
-      "O escore só fica completo com 48 horas: para decisões precoces, use o BISAP e a presença de SIRS.",
-      "Ranson ≥ 3 é o corte clássico de pancreatite grave; hoje a gravidade é definida pela falência orgânica (Atlanta revisada).",
-      "Na pancreatite biliar, marque o critério quando o valor ultrapassar o corte entre parênteses.",
-      "O sequestro de líquidos é a diferença entre o volume infundido e as perdas (diurese e outras) nas primeiras 48 horas.",
-      "O escore não foi validado para reavaliações após 48 horas nem para pancreatite pós-CPRE."
-    ],
     "sources": [
       [
         "Ranson JH et al. Prognostic signs and the role of operative management in acute pancreatitis. Surg Gynecol Obstet, 1974. (PubMed)",
@@ -175,6 +93,10 @@
       [
         "Tenner S et al. American College of Gastroenterology guideline: management of acute pancreatitis. Am J Gastroenterol, 2013.",
         "https://doi.org/10.1038/ajg.2013.218"
+      ],
+      [
+        "ACG2024,original guideline hosted by review-course mirror",
+        "https://www.giboardreview.com/wp-content/uploads/2024/04/ACG-guideline-acute-pancreatitis-Mch-2024.pdf"
       ]
     ],
     "cases": [
@@ -220,95 +142,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "Critérios de Ranson",
-      "fields": [
-        [
-          "idade",
-          "chk",
-          1
-        ],
-        [
-          "leuco",
-          "chk",
-          1
-        ],
-        [
-          "glic",
-          "chk",
-          1
-        ],
-        [
-          "ldh",
-          "chk",
-          1
-        ],
-        [
-          "ast",
-          "chk",
-          1
-        ],
-        [
-          "ht",
-          "chk",
-          1
-        ],
-        [
-          "bun",
-          "chk",
-          1
-        ],
-        [
-          "ca",
-          "chk",
-          1
-        ],
-        [
-          "pao2",
-          "chk",
-          1
-        ],
-        [
-          "be",
-          "chk",
-          1
-        ],
-        [
-          "seq",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Ranson 0 a 2: pancreatite leve provável",
-          "Mortalidade em torno de 1% na série original."
-        ],
-        [
-          3,
-          "mid",
-          "Ranson 3 a 4: pancreatite grave",
-          "Mortalidade em torno de 15%; monitorização intensiva."
-        ],
-        [
-          5,
-          "high",
-          "Ranson 5 a 6: pancreatite grave",
-          "Mortalidade em torno de 40%; considerar UTI."
-        ],
-        [
-          7,
-          "high",
-          "Ranson ≥ 7: pancreatite muito grave",
-          "Mortalidade próxima de 100% na série original; UTI."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -317,17 +150,525 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T21:26:07.221Z",
+      "total": 2048,
+      "passed": 2048,
+      "sourceRowCount": 2048,
+      "uniqueApiInputCount": 2048,
+      "sourceContextCount": 2048,
+      "scope": "All2048 binary states of11 already-affirmed original1979 Table1 signs, one point each; only selected-point arithmetic. Full1974/1982 biliary editions, measurement/unit conversion,10-sign biliary adaptation, diagnosis and mortality strata not confirmed.",
+      "originalSourceRowCount": 2048,
+      "excludedSourceObservationCount": 0,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "7ae381641d3f391f1dac85c6bb735b5f0a126ac2da3ddc11b30e63ffd5a5ff00",
+        "total": 2048,
+        "bankRowCount": 2048,
+        "uniqueApiInputCount": 2048,
+        "sourceContextCount": 2048,
+        "fullStoredSourceRows": 2048,
+        "excludedSourceObservationCount": 0,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+            "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+          "sha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29"
+        },
+        "packagingRequirement": "All original source32rows preserved across6artifacts,3753 source-eligible cases plus256 Duke source-ineligible observations. Preserve original expectations and explicit no-approval scope."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 2048,
+        "uniqueApiInputs": 2048,
+        "duplicateRows": 0
+      },
+      "sources": [
+        {
+          "primaryReview": {
+            "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+            "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+          },
+          "independentPrimaryReview": {
+            "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+            "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+          },
+          "targetedReading": {
+            "id": "criterios-de-ranson",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1397201/",
+            "edition": "Ranson1979 AnnSurg189:654–663 DOI10.1097/00000658-197905000-00016; Table1 printed655; original1974/1982 not fully read",
+            "personallyRead": [
+              "Captured original scans printed654,655,659,660 personally visually read: Methods, original11-sign Table1 and biliary discussion/limitations"
+            ],
+            "files": [
+              "six-primary-documents-final32/ranson-original-1979-annsurg00352-0136.png",
+              "six-primary-documents-final32/ranson-original-1979-annsurg00352-0137.png",
+              "six-primary-documents-final32/ranson-original-1979-annsurg00352-0141.png",
+              "six-primary-documents-final32/ranson-original-1979-annsurg00352-0142.png"
+            ],
+            "access": "Own PMC reopen returned captcha. Existing actual original NIH scans read; the1817-byte alleged PDF is not claimed as PDF/full paper.",
+            "supported": "Eleven already affirmed baseline signs contribute one point; five admission and six initial48h signs. All2048 binary states checked as selected arithmetic, not patients.",
+            "excluded": [
+              "AST Table1>250 SigmaFrankelunits/100mL not silently equated to localU/L",
+              "1979 biliary discussion AST>500SFU/100mL and omissionPaO2 distinct from local1982-labelled adaptation",
+              "1982/1974 full text and current10-item biliary computation not approved",
+              "Pancreatitis diagnosis, mortality/prognostic strata or observed thresholds"
+            ],
+            "sourceArtifacts": [
+              {
+                "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0136.png",
+                "bytes": 121145,
+                "sha256": "42bc6bef87a0487565c58200f2c7b8d86889214f7f847197dd768061114b9a83"
+              },
+              {
+                "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0137.png",
+                "bytes": 86290,
+                "sha256": "2fe315565fc6e3d3e0cbcd67b78cc7273e75277780c3f3577e1e6e395fbf2ba1"
+              },
+              {
+                "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0141.png",
+                "bytes": 141290,
+                "sha256": "0938ee3e79a5e065fca792001dc8e12550f5d4682946e9a72e0a47cf3457bfc2"
+              },
+              {
+                "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0142.png",
+                "bytes": 136042,
+                "sha256": "2e223fe91f4f1a764d83975954dca926991aaa9f46bf1965f73bc003fec57084"
+              }
+            ]
+          },
+          "declaredOriginalMethodVersion": "Ranson 1974 não-biliar e Ranson 1982 biliar; admissão+48 h; limiares por etiologia",
+          "sourceEditionsUnchanged": true,
+          "scope": "All2048 binary states of11 already-affirmed original1979 Table1 signs, one point each; only selected-point arithmetic. Full1974/1982 biliary editions, measurement/unit conversion,10-sign biliary adaptation, diagnosis and mortality strata not confirmed."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+      "evidenceSha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29",
+      "independentPeer": {
+        "evidence": {
+          "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+          "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+        },
+        "status": "passed-scoped-mathematical",
+        "packagingPeer": "pending",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/criterios-de-ranson/calculator.js",
+          "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/criterios-de-ranson/calculator.js",
+          "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/criterios-de-ranson/calculator.js",
+          "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+        }
+      ],
+      "qualifications": [
+        "All2048 binary states of11 already-affirmed original1979 Table1 signs, one point each; only selected-point arithmetic. Full1974/1982 biliary editions, measurement/unit conversion,10-sign biliary adaptation, diagnosis and mortality strata not confirmed.",
+        "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+        "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+        "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+        "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+        "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+        "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Ranson 1974 não-biliar e Ranson 1982 biliar; admissão+48 h; limiares por etiologia",
+    "implementationVersion": "criterios-de-ranson@native-2026-10-03+0c99e193a5f1",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/4834279/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Um ponto por critério: 5 na admissão e 6 ao longo das primeiras 48 horas. Total de 0 a 11 (0 a 10 na pancreatite biliar, que não usa a PaO₂). Os valores entre parênteses são os cortes para pancreatite biliar (Ranson 1982).",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "idade",
+            "label": "Admissão: idade &gt; 55 anos (biliar: &gt; 70)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "leuco",
+            "label": "Admissão: leucócitos &gt; 16.000/mm³ (biliar: &gt; 18.000)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "glic",
+            "label": "Admissão: glicemia &gt; 200 mg/dL (biliar: &gt; 220)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ldh",
+            "label": "Admissão: LDH &gt; 350 U/L (biliar: &gt; 400)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ast",
+            "label": "Admissão: AST &gt; 250 U/L",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ht",
+            "label": "48 h: queda do hematócrito &gt; 10 pontos percentuais",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "bun",
+            "label": "48 h: aumento do BUN &gt; 5 mg/dL, ureia &gt; 10,7 mg/dL (biliar: BUN &gt; 2, ureia &gt; 4,3)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ca",
+            "label": "48 h: cálcio &lt; 8 mg/dL",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "pao2",
+            "label": "48 h: PaO₂ &lt; 60 mmHg (não se aplica à biliar)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "be",
+            "label": "48 h: déficit de bases &gt; 4 mEq/L (biliar: &gt; 5)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "seq",
+            "label": "48 h: sequestro de líquidos &gt; 6 L (biliar: &gt; 4 L)",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "6a215e464c34868e95d3abfd7da062660ef8679508e752d1b7bf2913680390fb"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Ranson JH et al. Prognostic signs and the role of operative management in acute pancreatitis. Surg Gynecol Obstet, 1974. (PubMed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4834279/",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Prognostic signs and the role of operative management in acute pancreatitis.",
+            "year": "1974",
+            "firstPublicationDate": "1974-07-01",
+            "pmid": "4834279",
+            "journal": "Surgery, gynecology & obstetrics",
+            "authors": "Ranson JH, Rifkind KM, Roses DF, Fink SD, Eng K, Spencer FC."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/4834279/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Ranson JH. Etiological and prognostic factors in human acute pancreatitis: a review. Am J Gastroenterol, 1982. (PubMed)",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7051819/",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Etiological and prognostic factors in human acute pancreatitis: a review.",
+            "year": "1982",
+            "firstPublicationDate": "1982-09-01",
+            "pmid": "7051819",
+            "journal": "The American journal of gastroenterology",
+            "authors": "Ranson JH."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/7051819/",
+          "abstractAvailable": false,
+          "fullTextSha256": null,
+          "abstractSha256": null,
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Tenner S et al. American College of Gastroenterology guideline: management of acute pancreatitis. Am J Gastroenterol, 2013.",
+          "url": "https://doi.org/10.1038/ajg.2013.218",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "American College of Gastroenterology guideline: management of acute pancreatitis.",
+            "year": "2013",
+            "firstPublicationDate": "2013-07-30",
+            "doi": "10.1038/ajg.2013.218",
+            "pmid": "23896955",
+            "journal": "The American journal of gastroenterology",
+            "authors": "Tenner S, Baillie J, DeWitt J, Vege SS, American College of Gastroenterology."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/23896955/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "a93cc7f95671cd6c35ed11ef764b9532874655b7e1520386cc161dc07f98cee2",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T21:26:07.221Z",
+        "total": 2048,
+        "passed": 2048,
+        "sourceRowCount": 2048,
+        "uniqueApiInputCount": 2048,
+        "sourceContextCount": 2048,
+        "scope": "All2048 binary states of11 already-affirmed original1979 Table1 signs, one point each; only selected-point arithmetic. Full1974/1982 biliary editions, measurement/unit conversion,10-sign biliary adaptation, diagnosis and mortality strata not confirmed.",
+        "originalSourceRowCount": 2048,
+        "excludedSourceObservationCount": 0,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "7ae381641d3f391f1dac85c6bb735b5f0a126ac2da3ddc11b30e63ffd5a5ff00",
+          "total": 2048,
+          "bankRowCount": 2048,
+          "uniqueApiInputCount": 2048,
+          "sourceContextCount": 2048,
+          "fullStoredSourceRows": 2048,
+          "excludedSourceObservationCount": 0,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/six-primary-independent-expectations-final32-r2.json",
+              "sha256": "40d11daa6028d607c2b98916adb0b4d72e009237f0a476708ee241f2b4e36d03"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+            "sha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29"
+          },
+          "packagingRequirement": "All original source32rows preserved across6artifacts,3753 source-eligible cases plus256 Duke source-ineligible observations. Preserve original expectations and explicit no-approval scope."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 2048,
+          "uniqueApiInputs": 2048,
+          "duplicateRows": 0
+        },
+        "sources": [
+          {
+            "primaryReview": {
+              "file": "reports/review-20261003/six-primary-source-review-final32-r2.json",
+              "sha256": "258710e6b52d932aca86f2590791a2d83b88ed066541b47bad1d2e97f67c8c66"
+            },
+            "independentPrimaryReview": {
+              "file": "reports/review-20261003/six-primary-source-independent-review-publication-final32.json",
+              "sha256": "ec66760be8eb4ebf6aae699c3658d3e23c72fda54c159ee103cb1998fb893aa6"
+            },
+            "targetedReading": {
+              "id": "criterios-de-ranson",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1397201/",
+              "edition": "Ranson1979 AnnSurg189:654–663 DOI10.1097/00000658-197905000-00016; Table1 printed655; original1974/1982 not fully read",
+              "personallyRead": [
+                "Captured original scans printed654,655,659,660 personally visually read: Methods, original11-sign Table1 and biliary discussion/limitations"
+              ],
+              "files": [
+                "six-primary-documents-final32/ranson-original-1979-annsurg00352-0136.png",
+                "six-primary-documents-final32/ranson-original-1979-annsurg00352-0137.png",
+                "six-primary-documents-final32/ranson-original-1979-annsurg00352-0141.png",
+                "six-primary-documents-final32/ranson-original-1979-annsurg00352-0142.png"
+              ],
+              "access": "Own PMC reopen returned captcha. Existing actual original NIH scans read; the1817-byte alleged PDF is not claimed as PDF/full paper.",
+              "supported": "Eleven already affirmed baseline signs contribute one point; five admission and six initial48h signs. All2048 binary states checked as selected arithmetic, not patients.",
+              "excluded": [
+                "AST Table1>250 SigmaFrankelunits/100mL not silently equated to localU/L",
+                "1979 biliary discussion AST>500SFU/100mL and omissionPaO2 distinct from local1982-labelled adaptation",
+                "1982/1974 full text and current10-item biliary computation not approved",
+                "Pancreatitis diagnosis, mortality/prognostic strata or observed thresholds"
+              ],
+              "sourceArtifacts": [
+                {
+                  "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0136.png",
+                  "bytes": 121145,
+                  "sha256": "42bc6bef87a0487565c58200f2c7b8d86889214f7f847197dd768061114b9a83"
+                },
+                {
+                  "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0137.png",
+                  "bytes": 86290,
+                  "sha256": "2fe315565fc6e3d3e0cbcd67b78cc7273e75277780c3f3577e1e6e395fbf2ba1"
+                },
+                {
+                  "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0141.png",
+                  "bytes": 141290,
+                  "sha256": "0938ee3e79a5e065fca792001dc8e12550f5d4682946e9a72e0a47cf3457bfc2"
+                },
+                {
+                  "file": "six-primary-documents-final32/ranson-original-1979-annsurg00352-0142.png",
+                  "bytes": 136042,
+                  "sha256": "2e223fe91f4f1a764d83975954dca926991aaa9f46bf1965f73bc003fec57084"
+                }
+              ]
+            },
+            "declaredOriginalMethodVersion": "Ranson 1974 não-biliar e Ranson 1982 biliar; admissão+48 h; limiares por etiologia",
+            "sourceEditionsUnchanged": true,
+            "scope": "All2048 binary states of11 already-affirmed original1979 Table1 signs, one point each; only selected-point arithmetic. Full1974/1982 biliary editions, measurement/unit conversion,10-sign biliary adaptation, diagnosis and mortality strata not confirmed."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/six-primary-independent-source-check-final32-r2.json",
+        "evidenceSha256": "1adfa3b80e74c8fe41067e540f5dac40043f148703f12c43b54f98edc186bf29",
+        "independentPeer": {
+          "evidence": {
+            "file": "reports/review-20261003/six-primary-independent-peer-publication-final32.json",
+            "sha256": "cdf78c30cbcf97b22551c7177639b6480fb6ceb271ab76d0eeb1330830b356b1"
+          },
+          "status": "passed-scoped-mathematical",
+          "packagingPeer": "pending",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/criterios-de-ranson/calculator.js",
+            "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/criterios-de-ranson/calculator.js",
+            "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/criterios-de-ranson/calculator.js",
+            "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+          }
+        ],
+        "qualifications": [
+          "All2048 binary states of11 already-affirmed original1979 Table1 signs, one point each; only selected-point arithmetic. Full1974/1982 biliary editions, measurement/unit conversion,10-sign biliary adaptation, diagnosis and mortality strata not confirmed.",
+          "Strict integer/boolean/source-class equality; only DAS28 continuous fields retain the original16EPS×max(1,abs reference) criterion. None of the862 historical fixture expected values or tolerances are amended.",
+          "All original4009 rows are retained across6 complete artifacts:3753 eligible numeric/predicate witnesses and256 expressly unapproved Duke surgical+imaging observations. Only3753 count toward independent source scenarios.",
+          "Original3039 failed source-check assertions and69 strict APACHE mortality parity differences remain in the immutable original report. R2repairs66 diagnosis encodings without changing expected mathematics; R2mortality87differences remain unscoped/unapproved.",
+          "Own primary-table constants and4378 expectations were persisted before any engine/Western expectation imports; own39402Node/VM/Chromium executions passed selected scope. This package stage separately replays Node/VM and binds earlier actual Chromium observations.",
+          "No diagnosis, acquisition rubric, mortality/prognostic outcome, clinical cutoff/age60 resolution, risk/prophylaxis decision, instrument/right/translation authorization, professional language or full-method conformity approval.",
+          "Prospective source28/29/30/31 recipes own other evidence leaves. Compose only declared leaves and additive helper fragments, then recompute sums/identities; do not replace whole old catalogs."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
+    },
+    "limits": "Os critérios de Ranson combinam dados da admissão com dados de 48 horas; os critérios e limiares diferem entre pancreatite biliar e não biliar. Não trate itens ainda não observados como ausentes nem um total parcial como a avaliação completa. A diretriz ACG 2024 ressalta que sistemas como Ranson não predizem com precisão a evolução grave nas primeiras 24–48 horas e não substituem reavaliação de falência orgânica e sinais clínicos. O acompanhamento e o suporte inicial não devem aguardar o fechamento do escore.",
+    "limitsEvidence": {
+      "status": "direct-primary-guideline-content-sections-read",
+      "sources": [
+        {
+          "url": "https://www.giboardreview.com/wp-content/uploads/2024/04/ACG-guideline-acute-pancreatitis-Mch-2024.pdf",
+          "edition": "ACG2024,original guideline hosted by review-course mirror",
+          "readScope": "Direct primary-content PDF,Initial assessment/risk stratification and limitations of scoring,printedpp424–425. Not full guideline or licensed republication."
+        },
+        {
+          "url": "https://doi.org/10.1038/ajg.2013.218",
+          "edition": "ACG2013",
+          "readScope": "Exact cached original abstract fully read."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4834279/",
+          "edition": "Ranson1974",
+          "readScope": "Identity only."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/7051819/",
+          "edition": "Ranson1982",
+          "readScope": "Identity only."
+        }
+      ],
+      "populationScope": "Acute pancreatitis severity assessment with different biliary/nonbiliary criteria.",
+      "remainingChecks": [
+        "Original1974/1982 full tables not newly read.",
+        "ACG2024 named sections read from mirror of original content, not publisher domain."
+      ],
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "rightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/criterios-de-ranson/calculator.js",
+    "bytes": 5561,
+    "sha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "c36b35e30aa7000b4b94c84fc12e92eddc8704a3ac1b5d281e65d93cfefcf1bf",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "6c66048e1071c57de069d5b20ae0d626d7d837090fccba4c7311a7b582048531",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "6c66048e1071c57de069d5b20ae0d626d7d837090fccba4c7311a7b582048531",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

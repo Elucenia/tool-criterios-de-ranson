@@ -1,43 +1,102 @@
 [
   {
-    "label": "Idade e leucócitos: 2 critérios (leve)",
-    "input": {
+    "id": "criterios-de-ranson",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Idade e leucócitos: 2 critérios (leve)",
+    "originalInput": {
       "idade": true,
       "leuco": true
+    },
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
     },
     "expected": {
       "score": 2,
       "level": "low"
     },
-    "originalInput": {
-      "idade": true,
-      "leuco": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "Critérios de Ranson",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Idade, LDH, cálcio e sequestro: 4 critérios",
-    "input": {
+    "id": "criterios-de-ranson",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+    "originalInput": {
       "idade": true,
       "ldh": true,
       "ca": true,
       "seq": true
+    },
+    "input": {
+      "idade": true,
+      "ldh": true,
+      "ca": true,
+      "seq": true,
+      "leuco": false,
+      "glic": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "pao2": false,
+      "be": false
     },
     "expected": {
       "score": 4,
       "level": "mid"
     },
-    "originalInput": {
-      "idade": true,
-      "ldh": true,
-      "ca": true,
-      "seq": true
+    "recordedResult": {
+      "main": [
+        "4",
+        "pontos"
+      ],
+      "label": "Critérios de Ranson",
+      "raw": {
+        "score": 4
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "7 critérios: muito grave",
-    "input": {
+    "id": "criterios-de-ranson",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "7 critérios: muito grave",
+    "originalInput": {
       "idade": true,
       "leuco": true,
       "glic": true,
@@ -45,21 +104,42 @@
       "ht": true,
       "ca": true,
       "pao2": true
+    },
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": true,
+      "ldh": true,
+      "ht": true,
+      "ca": true,
+      "pao2": true,
+      "ast": false,
+      "bun": false,
+      "be": false,
+      "seq": false
     },
     "expected": {
       "score": 7,
       "level": "high",
       "verdict": "muito grave"
     },
-    "originalInput": {
-      "idade": true,
-      "leuco": true,
-      "glic": true,
-      "ldh": true,
-      "ht": true,
-      "ca": true,
-      "pao2": true
+    "recordedResult": {
+      "main": [
+        "7",
+        "pontos"
+      ],
+      "label": "Critérios de Ranson",
+      "raw": {
+        "score": 7
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

@@ -1,0 +1,269 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean idade",
+    "input": {
+      "idade": "2",
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "idade"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean leuco",
+    "input": {
+      "idade": true,
+      "leuco": "2",
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean glic",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": "2",
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ldh",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": "2",
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ldh"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ast",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": "2",
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ast"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ht",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": "2",
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ht"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean bun",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": "2",
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "bun"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean ca",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": "2",
+      "pao2": false,
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ca"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean pao2",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": "2",
+      "be": false,
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "pao2"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean be",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": "2",
+      "seq": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "be"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean seq",
+    "input": {
+      "idade": true,
+      "leuco": true,
+      "glic": false,
+      "ldh": false,
+      "ast": false,
+      "ht": false,
+      "bun": false,
+      "ca": false,
+      "pao2": false,
+      "be": false,
+      "seq": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "seq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
