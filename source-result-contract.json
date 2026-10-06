@@ -1,0 +1,194 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "criterios-de-ranson",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "bfc2cf14d9e806f3a18a90a63c71a960c86914e7",
+    "oldEngineSha256": "0c99e193a5f156cdd9ba509001f3ad3c8b17f15a0efcfb2585bb4f5480514d17",
+    "currentEngineSha256": "4de1fe98ead52e4d054d833fbac83f26cf8709924c0d868467e940911c3e4254"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Idade e leucócitos: 2 critérios (leve)",
+      "input": {
+        "idade": true,
+        "leuco": true,
+        "glic": false,
+        "ldh": false,
+        "ast": false,
+        "ht": false,
+        "bun": false,
+        "ca": false,
+        "pao2": false,
+        "be": false,
+        "seq": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-ranson",
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Critérios de Ranson",
+        "raw": {
+          "score": 2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 2,
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "2",
+          "pontos"
+        ],
+        "label": "Critérios de Ranson",
+        "level": "low",
+        "verdict": "Ranson 0 a 2: pancreatite leve provável",
+        "note": "Mortalidade em torno de 1% na série original.",
+        "raw": {
+          "score": 2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+      "input": {
+        "idade": true,
+        "ldh": true,
+        "ca": true,
+        "seq": true,
+        "leuco": false,
+        "glic": false,
+        "ast": false,
+        "ht": false,
+        "bun": false,
+        "pao2": false,
+        "be": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-ranson",
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Critérios de Ranson",
+        "raw": {
+          "score": 4
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 4,
+        "level": "mid"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "4",
+          "pontos"
+        ],
+        "label": "Critérios de Ranson",
+        "level": "mid",
+        "verdict": "Ranson 3 a 4: pancreatite grave",
+        "note": "Mortalidade em torno de 15%; monitorização intensiva.",
+        "raw": {
+          "score": 4
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "7 critérios: muito grave",
+      "input": {
+        "idade": true,
+        "leuco": true,
+        "glic": true,
+        "ldh": true,
+        "ht": true,
+        "ca": true,
+        "pao2": true,
+        "ast": false,
+        "bun": false,
+        "be": false,
+        "seq": false
+      },
+      "publicOutput": {
+        "id": "criterios-de-ranson",
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Critérios de Ranson",
+        "raw": {
+          "score": 7
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "score": 7,
+        "level": "high",
+        "verdict": "muito grave"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "7",
+          "pontos"
+        ],
+        "label": "Critérios de Ranson",
+        "level": "high",
+        "verdict": "Ranson ≥ 7: pancreatite muito grave",
+        "note": "Mortalidade próxima de 100% na série original; UTI.",
+        "raw": {
+          "score": 7
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "note"
+      ]
+    }
+  ]
+}

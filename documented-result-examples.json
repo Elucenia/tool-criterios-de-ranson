@@ -1,0 +1,537 @@
+{
+  "id": "criterios-de-ranson",
+  "implementationVersion": "criterios-de-ranson@native-2026-10-05+4de1fe98ead5",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 a 2: pancreatite leve provável",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Mortalidade em torno de 1% na série original.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 a 4: pancreatite grave",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Mortalidade em torno de 15%; monitorização intensiva.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7: pancreatite muito grave",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Mortalidade próxima de 100% na série original; UTI.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 to 2: likely mild pancreatitis",
+            "locale": "en",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "Mortality around 1% in the original series.",
+            "locale": "en",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 to 4: severe pancreatitis",
+            "locale": "en",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "Mortality around 15%; intensive monitoring.",
+            "locale": "en",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7: very severe pancreatitis",
+            "locale": "en",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "Mortality close to 100% in the original series; ICU.",
+            "locale": "en",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 a 2: pancreatitis leve probable",
+            "locale": "es",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "Mortalidad en torno al 1% en la serie original.",
+            "locale": "es",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 a 4: pancreatitis grave",
+            "locale": "es",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "Mortalidad en torno al 15%; monitorización intensiva.",
+            "locale": "es",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7: pancreatitis muy grave",
+            "locale": "es",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "Mortalidad cercana al 100% en la serie original; UCI.",
+            "locale": "es",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 à 2 : pancréatite légère probable",
+            "locale": "fr",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "Mortalité d’environ 1 % dans la série originale.",
+            "locale": "fr",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 à 4 : pancréatite sévère",
+            "locale": "fr",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "Mortalité d’environ 15 % ; surveillance intensive.",
+            "locale": "fr",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7 : pancréatite très sévère",
+            "locale": "fr",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "Mortalité proche de 100 % dans la série originale ; soins intensifs.",
+            "locale": "fr",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 bis 2: wahrscheinliche leichte Pankreatitis",
+            "locale": "de",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "Mortalität in der Originalserie bei etwa 1 %.",
+            "locale": "de",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 bis 4: schwere Pankreatitis",
+            "locale": "de",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "Mortalität von etwa 15 %; engmaschige Überwachung.",
+            "locale": "de",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7: sehr schwere Pankreatitis",
+            "locale": "de",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "Mortalität in der Originalserie nahe 100 %; Intensivstation.",
+            "locale": "de",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 a 2: pancreatite lieve probabile",
+            "locale": "it",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "Mortalità intorno all’1% nella serie originale.",
+            "locale": "it",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 a 4: pancreatite grave",
+            "locale": "it",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "Mortalità intorno al 15%; monitoraggio intensivo.",
+            "locale": "it",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7: pancreatite molto grave",
+            "locale": "it",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "Mortalità vicina al 100% nella serie originale; terapia intensiva.",
+            "locale": "it",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "رونسون 0 إلى 2: يُرجَّح التهاب بنكرياس خفيف",
+            "locale": "ar",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "الوفيات حوالي 1% في السلسلة الأصلية.",
+            "locale": "ar",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "رونسون 3 إلى 4: التهاب بنكرياس شديد",
+            "locale": "ar",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "الوفيات حوالي 15%؛ مراقبة مكثفة.",
+            "locale": "ar",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "رونسون ≥ 7: التهاب بنكرياس شديد جدًا",
+            "locale": "ar",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "الوفيات تقارب 100% في السلسلة الأصلية؛ العناية المركزة.",
+            "locale": "ar",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0至2：可能为轻症胰腺炎",
+            "locale": "zh",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "原始系列中的死亡率约为1%。",
+            "locale": "zh",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3至4：重症胰腺炎",
+            "locale": "zh",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "死亡率约15%；强化监测。",
+            "locale": "zh",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7：极重症胰腺炎",
+            "locale": "zh",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "原始系列中的死亡率接近100%；重症监护室。",
+            "locale": "zh",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0〜2：軽症膵炎の可能性",
+            "locale": "ja",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "原著シリーズでの死亡率は約1%。",
+            "locale": "ja",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3〜4：重症膵炎",
+            "locale": "ja",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "死亡率は約15%；集中的モニタリング。",
+            "locale": "ja",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7：超重症膵炎",
+            "locale": "ja",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "原著シリーズでの死亡率は100%近く；ICU。",
+            "locale": "ja",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Idade e leucócitos: 2 critérios (leve)",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 0 से 2: संभवतः हल्की अग्नाशयशोथ",
+            "locale": "hi",
+            "template": "documented-authored-1b3269e365c5ebb39bac"
+          },
+          "note": {
+            "text": "मूल श्रृंखला में मृत्यु दर लगभग 1%।",
+            "locale": "hi",
+            "template": "documented-authored-dc479cde427bea71cae2"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Idade, LDH, cálcio e sequestro: 4 critérios",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson 3 से 4: गंभीर अग्नाशयशोथ",
+            "locale": "hi",
+            "template": "documented-authored-91495c9a97bb7e909068"
+          },
+          "note": {
+            "text": "मृत्यु दर लगभग 15%; गहन निगरानी।",
+            "locale": "hi",
+            "template": "documented-authored-29e9362762992dcb0dee"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "7 critérios: muito grave",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Ranson ≥ 7: बहुत गंभीर अग्नाशयशोथ",
+            "locale": "hi",
+            "template": "documented-authored-6fa2793933185cd2d9d3"
+          },
+          "note": {
+            "text": "मूल श्रृंखला में मृत्यु दर लगभग 100%; ICU।",
+            "locale": "hi",
+            "template": "documented-authored-947de3735860c826cf62"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

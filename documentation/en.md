@@ -103,3 +103,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Ranson 0 to 2: likely mild pancreatitis
+
+Mortality around 1% in the original series.
+
+
+### 2
+
+Ranson 3 to 4: severe pancreatitis
+
+Mortality around 15%; intensive monitoring.
+
+
+### 3
+
+Ranson ≥ 7: very severe pancreatitis
+
+Mortality close to 100% in the original series; ICU.
+

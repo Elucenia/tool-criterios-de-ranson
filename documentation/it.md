@@ -103,3 +103,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Ranson 0 a 2: pancreatite lieve probabile
+
+Mortalità intorno all’1% nella serie originale.
+
+
+### 2
+
+Ranson 3 a 4: pancreatite grave
+
+Mortalità intorno al 15%; monitoraggio intensivo.
+
+
+### 3
+
+Ranson ≥ 7: pancreatite molto grave
+
+Mortalità vicina al 100% nella serie originale; terapia intensiva.
+
